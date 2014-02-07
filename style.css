@@ -1,0 +1,128 @@
+/**reset css*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1.4;
+	background: #FAFAFA;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+h1, h2, h3 {
+  font-weight: 300;
+}
+
+/**define layout */
+.left-sidebar{
+	width: 250px;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	bottom: 0px;  /** for all page*/
+	z-index: 10;
+}
+.sidebar-content {
+    margin: 0 20px 0 30px;
+}
+.main{
+	margin-left: 250px;
+	width: 700px;
+	z-index: 11;
+}
+.share-bar {
+
+    left: 950px;
+    position: fixed;
+    top: 100px;
+    width: 50px;
+    z-index: 100000;
+}
+/** in left-sidebar*/
+.top-title {
+ color: 8AC007;
+ font-size: 40px;
+}
+.top-adv{
+	height: 60px;
+	background: yellow;
+}
+.listing{
+	background: #ffffff;
+}
+/** content in article*/
+article,.article-footer{
+	padding: 20px;
+	background: #ffffff;
+}
+
+.author{
+	float: left;
+	width: 300px;
+}
+.related-post{
+	float: left;
+	width: 360px;
+}
+.related-post > ul{
+    margin-left: 10px;
+}
+.related-post li {
+    border-bottom: 1px solid #DDDDDD;
+}
+article img{
+	width: 100%;
+}
+
+quote{
+	background: none repeat scroll 0% 0% rgb(227, 227, 234);
+	position: relative;
+	border: 1px solid rgb(213, 210, 213);
+	color: rgb(102, 102, 102);
+	font-family: Asap,Sans-Serif;
+	font-size: 13px;
+	border-radius: 6px;
+	min-height: 40px;
+	margin: 20px 0px;
+	padding: 20px 20px 20px 75px;
+}
