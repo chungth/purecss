@@ -1,19 +1,39 @@
 <html>
 <head>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href='http://fonts.googleapis.com/css?family=Noticia+Text:400,400italic,700,700italic&subset=latin,vietnamese' rel='stylesheet' type='text/css'>
+	<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
 	<title>Index page - AAAAA's notes</title>
 </head>
 <body>
-<div class="container">
+<header>
+	<div class="container">
+		<div class="top-title"> AAA's notes</div>
+		<ul class="top-nav">
+			<li><a href="#">About me</a></li>
+			<li><a href="#">Contact</a></li>
+			<li class="social-mark">
+				<a href="#"><i class="fa fa-google-plus"></i></a>
+				<a href="#"><i class="fa fa-facebook"></i></a>
+				<a href="#"><i class="fa fa-twitter"></i></a>
+				<a href="#"><i class="fa fa-github"></i></a>
+				<a href="#"><i class="fa fa-rss"></i></a>
+			</li>
+			<li class="top-search">
+				<i class="fa fa-search"></i>
+			</li>
+		</ul>
+
+	</div>
+	
+</header>
+<div class="container top-60">
 	<div class="left-sidebar">
 		<div class="sidebar-content">
-			<div class="top-title"> AAA's notes</div>
-
-			 <hr/>
 			 <ul>
-				<li>Home</li>
-				<li>About me</li>
-				<li>Contact</li>
+			
+				
 				<li>FAQ</li>
 				<li>Copy</li>
 				<li>Add banner</li>
@@ -23,31 +43,34 @@
 	 
 	</div>
 	<div class="main">
-		<div class="top-adv"> you can place top-ad here</div>
+		<!-- <div class="top-adv"> you can place top-ad here</div> -->
 		<div class="listing">
 			<article>
 				<div class="article-header">
 					<h1 class="article-title">
 						This is title of article
 					</h1>
-					<div class="tags">
+					<div class="article-meta">
 						By <a href="#">Chung Tran</a> in <a href="#">Category 1</a>, <a href="#">Cateogyr 2</a>, 
 						Tags: <a href="#">Tags 1</a>, <a href="#">Tags 2</a>, <a href="#">Tags 3</a>
 					</div>
 				</div>
-				This area for listing content
-				<img src="http://expo.getbootstrap.com/screenshots/involvio.jpg"></img>
-				<h1>It's h1</h1>
-				<h2>It's h2</h2>
-				<h3>It's h3</h3>
-				<h4>It's h4</h4>
-				<h5>It's h5</h5>
+				<div class="article-content">
+					This area for listing content
+					<img src="http://expo.getbootstrap.com/screenshots/involvio.jpg"></img>
+					<h1>It's h1</h1>
+					<h2>It's h2</h2>
+					<h3>It's h3</h3>
+					<h4>It's h4</h4>
+					<h5>It's h5</h5>
 
-				<quote>
-					This is a "signoff" box. You can create as many signoffs as you want in the theme options and then insert them into posts via the shortcode builder. Or you can insert a one-off signoff on an individual post basis. The possibilities are endless.
-					
-					What is a "signoff"? Think of it as a way of telling your readers something before they go, maybe something that you always want to remind them of when they're done reading articles on your site. Maybe a reminder to check out your social profiles, signup for your newsletter, or contact the editor to offer feedback or report an issue. They are very versatile and can be used for whatever you need.
-				</quote>
+					<quote>
+						This is a "signoff" box. You can create as many signoffs as you want in the theme options and then insert them into posts via the shortcode builder. Or you can insert a one-off signoff on an individual post basis. The possibilities are endless.
+						
+						What is a "signoff"? Think of it as a way of telling your readers something before they go, maybe something that you always want to remind them of when they're done reading articles on your site. Maybe a reminder to check out your social profiles, signup for your newsletter, or contact the editor to offer feedback or report an issue. They are very versatile and can be used for whatever you need.
+					</quote>
+				</div>
+				
 			</article>
 			<div class="article-footer">
 
@@ -96,9 +119,16 @@
 	</div>
 	<div class="right-sidebar">
 		<div class="share-bar">
+			<i class="fa fa-share-square-o"></i>
+			<div id="fb-root"></div>
 				<!-- Place this tag where you want the +1 button to render. -->
 			<div class="g-plusone" data-size="tall"></div>
 
+			<a href="https://twitter.com/share" class="twitter-share-button" data-url="https://dev.twitter.com/pages/tweet_button" data-via="your_screen_name" data-lang="en" data-related="anywhereTheJavascriptAPI" data-count="vertical">Tweet</a>
+			<script src="//platform.linkedin.com/in.js" type="text/javascript">
+ lang: en_US
+</script>
+<script type="IN/Share" data-counter="top"></script>
 			<!-- Place this tag after the last +1 button tag. -->
 			<script type="text/javascript">
 			  (function() {
@@ -107,6 +137,18 @@
 			    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
 			  })();
 			</script>
+
+			<script>(function(d, s, id) {
+			  var js, fjs = d.getElementsByTagName(s)[0];
+			  if (d.getElementById(id)) return;
+			  js = d.createElement(s); js.id = id;
+			  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=1438477833042163";
+			  fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));</script>
+
+			    
+
+    			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 		</div>
 	</div>
 	

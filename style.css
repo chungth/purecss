@@ -27,7 +27,8 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1.4;
-	background: #FAFAFA;
+	font-family: 'Noticia Text', serif;
+	
 }
 ol, ul {
 	list-style: none;
@@ -50,39 +51,104 @@ a:hover {
 }
 
 h1, h2, h3 {
-  font-weight: 300;
+
+	font-weight: 300;
 }
 
+
 /**define layout */
-.left-sidebar{
-	width: 250px;
-	position: fixed;
-	top: 0px;
-	left: 0px;
-	bottom: 0px;  /** for all page*/
-	z-index: 10;
+
+header {
+    display: block;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 10;
+    background: none repeat scroll 0 0 #8AC007;
 }
-.sidebar-content {
-    margin: 0 20px 0 30px;
+.container {
+    float: auto;
+    margin: 0 auto;
+    width: 1000px;
 }
+.top-60{
+	margin-top: 60px;
+}
+.top-title {
+	float: left;
+    color: #FFFFFF;
+    font-size: 40px;
+    font-weight: bolder;
+    text-align: center;
+    height: 60px;
+}
+.top-nav {
+    //background: none repeat scroll 0 0 #FFFF00;
+    color: #FFFFFF;
+    float: right;
+
+    margin-top: 15px;
+}
+.top-nav > li {
+    float: left;
+    font-size: 18px;
+    margin-left: 20px;
+}
+.top-nav>li>a{
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.social-mark > a {
+    
+    font-size: 19px;
+}
+.top-nav>li>a:hover{
+	font-size: 24px;
+	font-weight: bold;
+}
+.left-sidebar {
+    background: none repeat scroll 0 0 #FFFFFF;
+    bottom: 0;
+    float: left;
+    top: 0;
+    width: 250px;
+    z-index: 10;
+}
+
 .main{
 	margin-left: 250px;
 	width: 700px;
 	z-index: 11;
 }
+.right-sidebar{
+	float: right;
+	width: 50px;
+}
+.sidebar-content li {
+    border-bottom: 1px solid #DDDDDD;
+}
 .share-bar {
 
-    left: 950px;
+   // left: 950px;
     position: fixed;
     top: 100px;
     width: 50px;
     z-index: 100000;
 }
-/** in left-sidebar*/
-.top-title {
- color: 8AC007;
- font-size: 40px;
+.share-bar>.fa.fa-share-square-o {
+    color: #DDDDDD;
+    font-size: 30px;
+    text-align: center;
+    width: 100%;
 }
+/** in left-sidebar*/
+
+
+.sidebar-content {
+    padding: 10px;
+}
+
 .top-adv{
 	height: 60px;
 	background: yellow;
@@ -91,6 +157,24 @@ h1, h2, h3 {
 	background: #ffffff;
 }
 /** content in article*/
+.article-meta{
+    border: 1px solid #E6E6E6;
+    font-size: 12px;
+    padding: 5px;
+}
+
+.article-content {
+    background: none repeat scroll 0 0 #FFFFFF;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.article-title{
+	font-size: 38px;
+	font-weight: bold;
+	color: #333333;
+	line-height: 40px;
+    text-decoration: none;
+}
 article,.article-footer{
 	padding: 20px;
 	background: #ffffff;
@@ -125,4 +209,10 @@ quote{
 	min-height: 40px;
 	margin: 20px 0px;
 	padding: 20px 20px 20px 75px;
+}
+/** responsive customizing*/
+
+/** need change to glyphicon*/
+.icon-facebook{
+	background-image: url("./glyphicon/facebook.png");
 }
